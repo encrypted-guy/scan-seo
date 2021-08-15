@@ -8,7 +8,8 @@
     "server": "nodemon index",
     "client": "npm start --prefix client",
     "installclient": "npm install --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "postbuild": "npm run build --prefix client"
   },
   "keywords": [
     "seo",
